@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Encryption App</title>
+    <link rel="stylesheet" href="/public/styles.css">
+</head>
+<body>
+    <h1>Image Encryption App</h1>
+    <form id="upload-form">
+        <input type="file" id="image" name="image" required>
+        <button type="submit">Upload and Encrypt</button>
+    </form>
+    <p id="encryption-message"></p>
+    <p id="encryption-key"></p>
+
+    <form id="decrypt-form">
+        <input type="text" id="decrypt-key" name="key" placeholder="Enter Decryption Key" required>
+        <button type="submit">Decrypt</button>
+    </form>
+    <p id="decryption-message"></p>
+
+    <script src="/public/index.js"></script>
+</body>
+</html>
